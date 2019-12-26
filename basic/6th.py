@@ -1,0 +1,11 @@
+''' LESSER OF TWO EVENS: write a function that returns the lesser of two given number if 
+both number is even, but returns the greater if one or both number
+are odd '''
+def lesser_of_two_evens(a,b):
+	if a%2==0 and b%2==0:
+		return(min(a,b))
+	else:
+		return(max(a,b))
+
+print(lesser_of_two_evens(2,4))
+print(lesser_of_two_evens(2,7))
