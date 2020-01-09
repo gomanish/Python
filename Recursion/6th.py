@@ -1,13 +1,23 @@
-# Fibonnaci sequence
+# Fibonnaci sequence (up to given number n)
 
 def fib(n):
-	x=0
+	x=1
 	y=1
-	i=0
-	while x<=n:
+	for i in range(n):
 		print x
 		x,y=y,x+y
-		i+=1
-	
 
-fib(input('Enter a number: ')) 
+num=input('Enter a number: ')
+fib(num) 
+
+
+#Using Recursion (print only nth number)
+def fib_rec(n):
+	if n==0 or n==1:
+		return n
+	else:
+		return fib_rec(n-1) + fib_rec(n-2)
+
+print '\n'
+print fib_rec(num)
+
