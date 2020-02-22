@@ -25,7 +25,7 @@ def addpoly(p1,p2):
 	return(ans)
   
   '''
-input : addpoly([(4,3),(3,0)],[(-4,3),(2,1)])
+input : [(4,3),(3,0)],[(-4,3),(2,1)]
 
 output : [(2, 1),(3, 0)]
 
